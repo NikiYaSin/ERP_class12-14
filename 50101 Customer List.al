@@ -19,7 +19,7 @@ pageextension 50101 "CustomerList.Ex" extends "Customer List"
                     if CustomerRewardsExtMgt.IsCustomerRewardsActivated then
                         CustomerRewardsExtMgt.OpenRewardsLevelPage
                     else
-                        CustomerRewardsExtMgt.OpenCustomerRewardsWizard;
+                        CustomerRewardsExtMgt.OpenCustomerRewardWizard;
                 end;
             }
         }

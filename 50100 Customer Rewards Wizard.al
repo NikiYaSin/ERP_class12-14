@@ -15,7 +15,7 @@ page 50100 "Customer Rewards Wizard"
                 Editable = false;
                 Visible = TopBannerVisible;
 
-                field("MediaResourcesStandard.""Media Reference""": MediaResourcesStandard."Media Reference")
+                field("MediaResourcesStandard.""Media Reference"""; MediaResourcesStandard."Media Reference")
                 {
                     ApplicationArea = All;
                     Editable = false;
@@ -286,7 +286,7 @@ page 50100 "Customer Rewards Wizard"
 
     local procedure ResetControls();
     begin
-        FinalEnabled := true;
+        FinishEnabled := true;
         BackEnabled := true;
         NextEnabled := true;
         ActivateEnabled := true;
@@ -334,7 +334,7 @@ codeunit 50100 "Customer Rewards Install Logic"
     var
         CustomerRewardsExtMgtSetup: Record "Customer Rewards Mgt. Setup";
     begin
-        CustomerRewardsExtMgtSetup.DeletAll;
+        CustomerRewardsExtMgtSetup.DeleteAll;
         CustomerRewardsExtMgtSetup.Init;
 
         CustomerRewardsExtMgtSetup."Customer Rewards Ext. Mgt. Codeunit ID" := Codeunit::"Customer Rewards Ext. Mgt.";

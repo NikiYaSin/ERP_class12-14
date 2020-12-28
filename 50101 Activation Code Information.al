@@ -1,4 +1,4 @@
-table 50101 "Activation Code Information"
+table 50103 "Activation Code Information"
 {
     fields
     {
